@@ -1,0 +1,100 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-image: url(Quarantine\ Barbie.png);
+    background-attachment: cover;
+    background-position: center;  
+    box-sizing: border-box; 
+    font-family: sans-serif;
+}
+.menu-bar
+{
+    text-align: center;
+    background-color: pink;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none; 
+    color: white;
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 8px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color:#fff ;
+}
+.active, .menu-bar ul li:hover
+{
+    background: #F72585;
+    border-radius: 3px;
+}
+
+.menu-bar .fa 
+{
+    margin-right: 8px;
+}
+
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: pink;
+    margin-top: 10px;
+    margin-left: -10px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none; 
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color:#F72585;   
+}
+
+.fa-angle-right
+{
+    float: right ;
+}
+.sub-menu-2
+{
+    display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+    display: block;
+    position: absolute;
+    background: pink;
+    margin-top: -40px;
+    margin-left: 140px;
+
+}
